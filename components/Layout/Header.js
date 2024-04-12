@@ -135,7 +135,7 @@ export default function Header() {
             width={500}
             height={500}
             alt="logo"
-            className="object-contain hidden md:block h-8 md:h-[35px]  w-fit my-auto"
+            className="object-contain hidden md:block h-8 md:h-[40px]  w-fit my-auto"
           />
           {scrollHeight > 200 ? (
             <Image
@@ -143,7 +143,7 @@ export default function Header() {
               width={500}
               height={500}
               alt="logo"
-              className="object-contain md:hidden h-8 md:h-[35px]  w-fit my-auto"
+              className="object-contain md:hidden h-8 md:h-[40px]  w-fit my-auto"
             />
           ) : (
             <Image
@@ -151,9 +151,13 @@ export default function Header() {
               width={500}
               height={500}
               alt="logo"
-              className="object-contain md:hidden h-8 md:h-[35px]  w-fit my-auto"
+              className="object-contain md:hidden h-8 md:h-[40px]  w-fit my-auto"
             />
           )}
+
+          <span className="text-xl md:text-2xl lg:text-3xl font-semibold text-primary">
+            Amerika Fleg
+          </span>
         </div>
 
         <div
@@ -167,7 +171,7 @@ export default function Header() {
               activeSection == "hero"
                 ? "bg-primary shadow px-3  py-1 rounded-full text-white font-bold "
                 : "hover:bg-primary hover:text-white hover:px-3 hover:py-1 hover:rounded-full duration-300"
-            }  duration-300 lg:text-[16px]   ${
+            }  duration-300 lg:text-[20px]   ${
               scrollHeight > 200
                 ? activeSection == "hero"
                   ? "text-white"
@@ -184,7 +188,7 @@ export default function Header() {
               activeSection == "about"
                 ? "bg-primary shadow px-3 py-1 rounded-full text-white font-bold "
                 : "hover:bg-primary hover:text-white hover:px-3 hover:py-1 hover:rounded-full duration-300"
-            }  duration-300 lg:text-[16px]   ${
+            }  duration-300 lg:text-[20px]   ${
               scrollHeight > 200
                 ? activeSection == "about"
                   ? "text-white"
@@ -200,7 +204,7 @@ export default function Header() {
               activeSection == "nft_Gallery"
                 ? "bg-primary  shadow px-3 py-1 rounded-full text-white font-bold "
                 : "hover:bg-primary hover:text-white hover:px-3 hover:py-1 hover:rounded-full duration-300"
-            }  duration-300 lg:text-[16px]   ${
+            }  duration-300 lg:text-[20px]   ${
               scrollHeight > 200
                 ? activeSection == "nft_Gallery"
                   ? "text-white"
@@ -217,7 +221,7 @@ export default function Header() {
               activeSection == "roadmap"
                 ? "bg-primary shadow px-3 py-1 rounded-full text-white font-bold "
                 : "hover:bg-primary hover:text-white hover:px-3 hover:py-1 hover:rounded-full duration-300"
-            }  duration-300 lg:text-[16px]   ${
+            }  duration-300 lg:text-[20px]   ${
               scrollHeight > 200
                 ? activeSection == "roadmap"
                   ? "text-white"
@@ -234,7 +238,7 @@ export default function Header() {
               activeSection == "team"
                 ? "bg-primary shadow px-3 py-1 rounded-full text-white font-bold "
                 : "hover:bg-primary hover:text-white hover:px-3 hover:py-1 hover:rounded-full duration-300"
-            }  duration-300 lg:text-[16px]   ${
+            }  duration-300 lg:text-[20px]   ${
               scrollHeight > 200
                 ? activeSection == "team"
                   ? "text-white"
@@ -282,7 +286,7 @@ export default function Header() {
             className="text-white  duration-300 "
           >
             <button
-              className={`flex gap-1 items-center  duration-300 lg:text-[16px]  hover:px-5 py-1 rounded-full hover:bg-primary hover:text-white  ${
+              className={`flex gap-1 items-center  duration-300 lg:text-[20px]  hover:px-5 py-1 rounded-full hover:bg-primary hover:text-white  ${
                 scrollHeight > 200
                   ? activeSection == "contact"
                     ? "text-white"
@@ -355,6 +359,9 @@ export default function Header() {
             className="object-contain h-[85px] w-fit my-auto mx-auto p-5 "
             blurDataURL="/blur.png "
           />
+          <p className="text-xl md:text-2xl lg:text-3xl font-semibold text-primary text-center">
+            Amerika Fleg
+          </p>
 
           <div className=" flex justify-center items-center flex-col gap-4 tracking-wide lg:text-lg text-base mt-10">
             <button
@@ -366,7 +373,7 @@ export default function Header() {
                 activeSection == "hero"
                   ? "bg-primary px-3  py-1 rounded-full text-white font-bold "
                   : "hover:bg-primary hover:text-white hover:px-3 hover:py-1 hover:rounded-full duration-300"
-              }  duration-300 lg:text-[16px]  `}
+              }  duration-300 lg:text-[20px]  `}
             >
               Home
             </button>
@@ -380,7 +387,7 @@ export default function Header() {
                 activeSection == "about"
                   ? "bg-primary px-3 py-1 rounded-full text-white font-bold "
                   : "hover:bg-primary hover:text-white hover:px-3 hover:py-1 hover:rounded-full duration-300"
-              }  duration-300 lg:text-[16px]  `}
+              }  duration-300 lg:text-[20px]  `}
             >
               About
             </button>
@@ -393,7 +400,7 @@ export default function Header() {
                 activeSection == "nft_Gallery"
                   ? "bg-primary px-3 py-1 rounded-full text-white font-bold "
                   : "hover:bg-primary hover:text-white hover:px-3 hover:py-1 hover:rounded-full duration-300"
-              }  duration-300 lg:text-[16px]  `}
+              }  duration-300 lg:text-[20px]  `}
             >
               1/1&nbsp;Gallery
             </button>
@@ -407,7 +414,7 @@ export default function Header() {
                 activeSection == "roadmap"
                   ? "bg-primary px-3 py-1 rounded-full text-white font-bold "
                   : "hover:bg-primary hover:text-white hover:px-3 hover:py-1 hover:rounded-full duration-300"
-              }  duration-300 lg:text-[16px]  `}
+              }  duration-300 lg:text-[20px]  `}
             >
               Roadmap
             </button>
@@ -421,7 +428,7 @@ export default function Header() {
                 activeSection == "team"
                   ? "bg-primary px-3 py-1 rounded-full text-white font-bold "
                   : "hover:bg-primary hover:text-white hover:px-3 hover:py-1 hover:rounded-full duration-300"
-              }  duration-300 lg:text-[16px]  `}
+              }  duration-300 lg:text-[20px]  `}
             >
               Team
             </button>
@@ -431,7 +438,7 @@ export default function Header() {
               className="text-white  duration-300 "
             >
               <button
-                className={`flex gap-1 items-center  duration-300 lg:text-[16px]   ${
+                className={`flex gap-1 items-center  duration-300 lg:text-[20px]   ${
                   scrollHeight > 200
                     ? activeSection == "contact"
                       ? "text-white"

@@ -14,6 +14,10 @@ export default function Document() {
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Darumadrop+One&display=swap"
+          rel="stylesheet"
+        />
 
         <meta name="title" content="Project Fada" />
         <meta

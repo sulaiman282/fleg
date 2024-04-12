@@ -55,7 +55,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #9e1d4d !important;
+  background-color: #0149AB !important;
 }
 .curve1 {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 93%);

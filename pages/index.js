@@ -20,7 +20,7 @@ export default function Index() {
         {/* <Hero /> */}
         <ImageEditorContainer />
         <section
-          className="bg-[url('/red1.png')] bg-no-repeat bg-cover bg-center min-h-screen flex flex-col justify-center "
+          className="bg-primary bg-no-repeat bg-cover bg-center min-h-screen flex flex-col justify-center "
           id="about"
         >
           <div className=" py-20 ">

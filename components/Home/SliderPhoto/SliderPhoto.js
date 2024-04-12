@@ -73,24 +73,10 @@ const SimpleSlider = () => {
     "/faidenimage/12.png",
     "/faidenimage/13.png",
     "/faidenimage/14.png",
-    "/faidenimage/15.png",
-  ];
-  const web2 = [
     "/faidenimage/16.png",
     "/faidenimage/17.png",
-    "/faidenimage/18.png",
-    "/faidenimage/19.png",
-    "/faidenimage/20.png",
-    "/faidenimage/21.png",
-    "/faidenimage/22.png",
-    "/faidenimage/23.png",
-    "/faidenimage/24.png",
-    "/faidenimage/25.png",
-    "/faidenimage/26.png",
-    "/faidenimage/27.png",
-    "/faidenimage/28.png",
-    "/faidenimage/29.png",
   ];
+
   return (
     <div className=" w-full ">
       <Slider {...settings}>

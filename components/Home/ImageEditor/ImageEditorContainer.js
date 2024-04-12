@@ -6,7 +6,7 @@ import Button from "@mui/material/Button";
 import DownloadIcon from "@mui/icons-material/Download";
 import ReplayIcon from "@mui/icons-material/Replay";
 import { toast } from "react-toastify";
-import imageCompression from 'browser-image-compression';
+import imageCompression from "browser-image-compression";
 
 export default function ImageEditorContainer() {
   const [files, setFiles] = useState([]);
@@ -18,24 +18,24 @@ export default function ImageEditorContainer() {
     if (files.length === 0) return;
     const imageFile = files[0];
     setFileName(files[0]?.name);
-  
+
     // Compress image
     const options = {
       maxSizeMB: 1, // maximum file size in MB
       maxWidthOrHeight: 1024, // maximum width or height of the image
-      useWebWorker: true // use web worker for faster compression (recommended)
+      useWebWorker: true, // use web worker for faster compression (recommended)
     };
-  
+
     try {
       const compressedFile = await imageCompression(imageFile, options);
       const convertedFile = new File([compressedFile], "filename.png", {
         type: "image/png",
       });
-  
+
       setIsLoading(true);
       const formData = new FormData();
       formData.append("file", convertedFile);
-  
+
       const response = await axios.post(
         process.env.NEXT_PUBLIC_API_URL,
         formData,
@@ -45,11 +45,11 @@ export default function ImageEditorContainer() {
             "Cache-Control": "no-cache",
           },
           responseType: "blob",
-        }
+        },
       );
-  
+
       setIsLoading(false);
-  
+
       if (response.data instanceof Blob) {
         // If response data is a Blob
         const reader = new FileReader();
@@ -94,7 +94,7 @@ export default function ImageEditorContainer() {
     <div className="bg-slate-100 py-5 lg:py-10">
       <div className="container-sk  ">
         <h2 className="text-center lg:text-5xl md:text-4xl text-3xl font-extrabold animate__animated animate__fadeIn mb-5 text-primary ">
-          Fleg
+        Amerikanize Your Pfp
         </h2>
 
         {!previewUrl ? (

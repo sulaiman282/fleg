@@ -7,11 +7,10 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Open Sans", "sans-serif"],
-        // display: ["Playfair Display", "serif"],
+        sans: ["Darumadrop One", "sans-serif"],
       },
       colors: {
-        primary: "#9E1D4D",
+        primary: "#0149AB",
       },
       boxShadow: {
         "3xl": "0px 8px 25px rgba(0, 0, 0, 0.07)",

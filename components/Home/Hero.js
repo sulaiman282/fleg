@@ -29,7 +29,7 @@ export default function Hero({ videoRef, handleToggleVideo1 }) {
       <video
         ref={videoRef}
         loop
-        className="w-full  object-cover  h-screen  pointer-events-none"
+        className="w-full  object-cover lg:object-fill  h-screen  pointer-events-none"
         muted
         playsInline
       >

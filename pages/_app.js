@@ -33,11 +33,11 @@ function MyApp({ Component, pageProps, router }) {
   const theme = createTheme({
     palette: {
       primary: {
-        main: "#9E1D4D",
+        main: "#0149AB",
       },
     },
     typography: {
-      fontFamily: "Open Sans, sans-serif",
+      fontFamily: "Darumadrop One, sans-serif",
     },
   });
 
