@@ -49,13 +49,13 @@ export default function Scroller() {
   return (
     <>
       {height > 400 && (
-        <div className="fixed bottom-0 right-0 m-5 lg:m-10 block ">
+        <div className="fixed bottom-5  right-0  lg:right-5 m-5  block ">
           <IconButton
             variant="text"
             className="text-primary w-fit h-fit"
             onClick={Scrolltotop}
           >
-            <KeyboardArrowUpIcon className="bg-white rounded-full text-primary shadow-lg focus:text-white !text-[40px] " />
+            <KeyboardArrowUpIcon className="bg-white rounded-full text-primary shadow-lg focus:text-white !text-[32px] lg:!text-[36px]" />
           </IconButton>
         </div>
       )}

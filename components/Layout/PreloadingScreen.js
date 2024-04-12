@@ -56,7 +56,7 @@ export default function PreloadingScreen({ togglePlay1, handleToggleVideo1 }) {
                   makeHide();
                 }}
                 className={`animate-pulse  w-fit h-fit duration-500    ${
-                  show ? "split-half3" : "bg-black/20 hover:bg-white mt-5"
+                  show ? "split-half3" : "bg-white/80 hover:bg-white mt-5"
                 }`}
               >
                 <Avatar src="/fav.png" className="h-12 w-12"></Avatar>
