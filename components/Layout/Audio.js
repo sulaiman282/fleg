@@ -6,10 +6,10 @@ import { IconButton } from "@mui/material";
 
 const AudioPlayer = ({ audioRef, isPlaying, setIsPlaying, togglePlay }) => {
   return (
-    <div className="fixed bottom-0 left-0 m-5 ">
+    <div className="fixed bottom-5 left-0 lg:left-5 m-5 ">
       <audio
         ref={audioRef}
-        src="/audio1.mp3"
+        src="/audio2.mp3"
         autoPlay
         loop
         className="pointer-events-none"

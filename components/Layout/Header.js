@@ -224,22 +224,6 @@ export default function Header() {
             How to buy
           </button>
 
-          <button
-            onClick={() => smoothScrollToSection("team")}
-            className={`${
-              activeSection == "team"
-                ? "bg-primary shadow px-3 py-1 rounded-full text-white font-bold "
-                : "hover:bg-primary hover:text-white hover:px-3 hover:py-1 hover:rounded-full duration-300"
-            }  duration-300 lg:text-[20px]   ${
-              scrollHeight > 200
-                ? activeSection == "team"
-                  ? "text-white"
-                  : "text-primary"
-                : "text-white"
-            }`}
-          >
-            Team
-          </button>
           <Link href="https://raydium.io/swap/" target="_blank">
             <Button
               variant="contained"
@@ -348,19 +332,6 @@ export default function Header() {
               How to buy
             </button>
 
-            <button
-              onClick={() => {
-                smoothScrollToSection("team");
-                toggleDrawer();
-              }}
-              className={`${
-                activeSection == "team"
-                  ? "bg-primary px-3 py-1 rounded-full text-white font-bold "
-                  : "hover:bg-primary hover:text-white hover:px-3 hover:py-1 hover:rounded-full duration-300"
-              }  duration-300 lg:text-[20px]  `}
-            >
-              Team
-            </button>
             <Link href="https://raydium.io/swap/" target="_blank">
               <Button
                 variant="contained"

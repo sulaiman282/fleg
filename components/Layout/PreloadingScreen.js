@@ -79,13 +79,19 @@ export default function PreloadingScreen({ togglePlay1, handleToggleVideo1 }) {
                 <Avatar src="/fav.png" className="h-12 w-12"></Avatar>
               </IconButton>
               <span
+                 onClick={(e) => {
+                  togglePlay1();
+                  handleToggleVideo1();
+                  setShow(true);
+                  makeHide();
+                }}
                 className={`mt-5 font-bold lg:text-4xl md:text-3xl text-2xl text-primary text-center  ${
                   show ? "split-half3 " : ""
                 }`}
               >
-                ENTER THE
+                Uniting Tickers
                 <br />
-                FADA WORLD
+                Join Now
               </span>
 
               {/* <KeyboardArrowUpIcon className={`text-primary text-4xl animate-bounce mt-5 ${

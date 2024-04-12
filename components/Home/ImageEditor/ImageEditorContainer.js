@@ -47,7 +47,7 @@ export default function ImageEditorContainer() {
             "Cache-Control": "no-cache",
           },
           responseType: "blob",
-        }
+        },
       );
 
       setIsLoading(false);
@@ -93,7 +93,10 @@ export default function ImageEditorContainer() {
   }, [files]);
 
   return (
-    <section className="bg-slate-100 py-5 lg:py-10 min-h-screen flex  items-center w-full relative" id="ayp">
+    <section
+      className="bg-slate-100 py-5 lg:py-10 min-h-screen flex  items-center w-full relative"
+      id="ayp"
+    >
       {/* <Particless/> */}
       <div className="container-sk  ">
         <h2 className="text-center lg:text-5xl md:text-4xl text-3xl font-extrabold animate__animated animate__fadeIn mb-5 lg:mb-10 text-primary ">
@@ -125,40 +128,39 @@ export default function ImageEditorContainer() {
             )}
           </div>
         ) : (
-
           <div className="flex container-sk md:flex-row flex-col gap-4 lg:gap-8 lg:h-[50vh]">
-          <Image
-            placeholder="blur"
-            src={"/c1.jpg"}
-            width={500}
-            height={500}
-            alt="sample"
-            blurDataURL="/blur.png"
-            className=" w-full h-full  md:w-1/2 "
-          />
-          <div className=" md:w-1/2 w-full mx-auto ">
-            <img
-              src={previewUrl}
-              alt="Background Removed  "
-              className="w-full h-full  object-contain "
+            <Image
+              placeholder="blur"
+              src={"/c1.jpg"}
+              width={500}
+              height={500}
+              alt="sample"
+              blurDataURL="/blur.png"
+              className=" w-full h-full  md:w-1/2 "
             />
-            <div className="flex justify-center items-center gap-4 mt-5 lg:mt-10">
-              <Button
-                onClick={handleDownloadImage}
-                variant="outlined"
-                startIcon={<DownloadIcon />}
-              >
-                Download
-              </Button>
-              <Button
-                onClick={tryagain}
-                variant="outlined"
-                startIcon={<ReplayIcon />}
-              >
-                Try again{" "}
-              </Button>
+            <div className=" md:w-1/2 w-full mx-auto ">
+              <img
+                src={previewUrl}
+                alt="Background Removed  "
+                className="w-full h-full  object-contain "
+              />
+              <div className="flex justify-center items-center gap-4 mt-5 lg:mt-10">
+                <Button
+                  onClick={handleDownloadImage}
+                  variant="outlined"
+                  startIcon={<DownloadIcon />}
+                >
+                  Download
+                </Button>
+                <Button
+                  onClick={tryagain}
+                  variant="outlined"
+                  startIcon={<ReplayIcon />}
+                >
+                  Try again{" "}
+                </Button>
+              </div>
             </div>
-          </div>
           </div>
         )}
       </div>

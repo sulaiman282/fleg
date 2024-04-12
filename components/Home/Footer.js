@@ -6,23 +6,20 @@ import Link from "next/link";
 import { toast } from "react-toastify";
 
 export default function Footer() {
-  const[isCopied,setIsCopied]= useState(false)
+  const [isCopied, setIsCopied] = useState(false);
   const handleClick = async () => {
-    if(!isCopied){
-      const textToCopy = "CA : AmEriCAq4JpHxZNBNEaKJb1VRptQGv1CRHz5ytNqBpN";
-    
+    if (!isCopied) {
+      const textToCopy = "AmEriCAq4JpHxZNBNEaKJb1VRptQGv1CRHz5ytNqBpN";
       try {
         await navigator.clipboard.writeText(textToCopy);
         toast.success("Copied");
-        setIsCopied(true)
+        setIsCopied(true);
       } catch (error) {
-        console.error('Unable to copy text: ', error);
+        console.error("Unable to copy text: ", error);
       }
     }
-   
   };
-  
-  
+
   return (
     <div className="bg-[url('/footer.png')] bg-cover bg-center  bg-no-repeat">
       <div className="w-full backdrop-brightness-75  backdrop-blur-sm  relative">
@@ -43,11 +40,11 @@ export default function Footer() {
               <div className="   ">
                 <div className="flex  flex-col justify-center items-center   h-fit w-fit gap-4 lg:gap-8   p-10 ">
                   <Image
-                    src="/faidenimage/16.png"
+                    src="/logo.png"
                     width={500}
                     height={500}
                     alt="logo"
-                    className="lg:w-40 lg:h-40 h-25 w-24 hover:rotate-[360deg] duration-1000 rounded-full object-cover cursor-wait"
+                    className="lg:w-40 lg:h-40 h-25 w-24 hover:rotate-[360deg] duration-1000 object-contain cursor-wait"
                   />
                   <Link
                     href="https://magiceden.io/collections/polygon/project_fada"
@@ -68,12 +65,12 @@ export default function Footer() {
                   </p>
 
                   <Button
-                  onClick={handleClick}
-                      className="text-primary shadow-none hover:text-white mt-4  lg:text-3xl text-xl px-5 py-3 lg:px-10 "
-                      variant="contained"
-                    >
-                      CA : AmEriCAq4JpHxZNBNEaKJb1VRptQGv1CRHz5ytNqBpN
-                    </Button>
+                    onClick={handleClick}
+                    className="text-primary shadow-none hover:text-white mt-4  lg:text-3xl text-xl px-5 py-3 lg:px-10 "
+                    variant="contained"
+                  >
+                    CA : AmEriCAq4JpHxZNBNEaKJb1VRptQGv1CRHz5ytNqBpN
+                  </Button>
                 </div>
               </div>
             </ScrollAnimation>
