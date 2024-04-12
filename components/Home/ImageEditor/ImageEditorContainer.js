@@ -123,7 +123,7 @@ export default function ImageEditorContainer() {
                 <CircularProgress />
                 <p className="text-center lg:text-3xl text-xl text-white">
                   Please wait while we are processing your image.<br/>
-                  (Will take 10sec - 2 mins)
+                  (Will take 2)
                 </p>
               </div>
             )}
