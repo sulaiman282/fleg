@@ -15,6 +15,13 @@ const FileUploader = ({ setFiles }) => {
       filesLimit={1}
       showPreviewsInDropzone={true}
       showPreviews={false}
+      dropzoneClass="h-full !flex !flex-col !items-center !justify-center gap-4 border-2 rounded-lg !border-dashed !border-primary"
+      dropzoneParagraphClass="custom-paragraph"
+      dropzoneTextClass="custom-text"
+      previewGridClasses={{
+        container: "custom-preview-container",
+        item: "custom-preview-item",
+      }}
     />
   );
 };
