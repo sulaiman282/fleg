@@ -9,7 +9,10 @@ export default function PreloadingScreen({ togglePlay1, handleToggleVideo1 }) {
 
   useEffect(() => {
     if (show === false) {
-      scrollTo(0, 0);
+      window.scroll({
+        top: 0,
+        behavior: "smooth" 
+      });      
       document.body.classList.add("overflow-hidden");
     }
   }, [show]);
@@ -35,25 +38,11 @@ export default function PreloadingScreen({ togglePlay1, handleToggleVideo1 }) {
               className={`relative ${
                 show ? "split-half1" : ""
               }   w-full h-full`}
-              //   style={{
-              //     backgroundImage: `url('/loadingbg.jpg')`,
-              //     backgroundRepeat: "no-repeat",
-              //     backgroundAttachment: "fixed",
-              //     backgroundPosition: "center",
-              //     backgroundSize: "cover",
-              //   }}
             >
               <div className="w-full h-full bg-red-700/10 backdrop-blur-md"></div>
             </div>
             <div
               className={`relative ${show ? "split-half2" : ""} w-full h-full `}
-              //   style={{
-              //     backgroundImage: `url('/loadingbg.jpg')`,
-              //     backgroundRepeat: "no-repeat",
-              //     backgroundAttachment: "fixed",
-              //     backgroundPosition: "center",
-              //     backgroundSize: "cover",
-              //   }}
             >
               <div className="w-full h-full bg-blue-700/10 backdrop-blur-md"></div>
             </div>
@@ -70,12 +59,6 @@ export default function PreloadingScreen({ togglePlay1, handleToggleVideo1 }) {
                   show ? "split-half3" : "bg-black/20 hover:bg-white mt-5"
                 }`}
               >
-                {/* <PlayCircleIcon
-                  className={`text-7xl text-primary ${
-                    show ? "animate-ping" : "animate-pulse "
-                  } `}
-                /> */}
-
                 <Avatar src="/fav.png" className="h-12 w-12"></Avatar>
               </IconButton>
               <span
@@ -93,10 +76,6 @@ export default function PreloadingScreen({ togglePlay1, handleToggleVideo1 }) {
                 <br />
                 Join Now
               </span>
-
-              {/* <KeyboardArrowUpIcon className={`text-primary text-4xl animate-bounce mt-5 ${
-                  show ? "split-half3" : ""
-                }`}/> */}
             </div>
           </div>
         </div>
