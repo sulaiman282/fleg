@@ -6,7 +6,7 @@ export default function Hero() {
 
 
   return (
-    <section className="min-h-screen bg-[url('/footer.png')] bg-cover bg-center  bg-no-repeat" id="hero">
+    <section className="min-h-screen bg-[url('/footer2.png')]  bg-cover bg-center  bg-no-repeat" id="hero">
      
     </section>
   );
