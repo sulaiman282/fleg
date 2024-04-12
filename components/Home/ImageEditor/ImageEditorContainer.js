@@ -8,6 +8,7 @@ import ReplayIcon from "@mui/icons-material/Replay";
 import { toast } from "react-toastify";
 import imageCompression from "browser-image-compression";
 import Image from "next/image";
+import Particless from "../Particles";
 
 export default function ImageEditorContainer() {
   const [files, setFiles] = useState([]);
@@ -92,8 +93,8 @@ export default function ImageEditorContainer() {
   }, [files]);
 
   return (
-    <section className="bg-slate-100 py-5 lg:py-10 min-h-screen flex  items-center w-full" id="ayp">
-      <Particles/>
+    <section className="bg-slate-100 py-5 lg:py-10 min-h-screen flex  items-center w-full relative" id="ayp">
+      {/* <Particless/> */}
       <div className="container-sk  ">
         <h2 className="text-center lg:text-5xl md:text-4xl text-3xl font-extrabold animate__animated animate__fadeIn mb-5 lg:mb-10 text-primary ">
           Amerikanize Your Pfp

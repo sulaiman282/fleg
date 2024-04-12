@@ -1,14 +1,11 @@
 import React from "react";
 import Particles from "react-tsparticles";
-
 import { useCallback } from "react";
-
 import { loadFull } from "tsparticles";
 
 export default function Particless() {
   const particlesInit = useCallback(async (engine) => {
     console.log(engine);
-
     await loadFull(engine);
   }, []);
 
@@ -17,13 +14,12 @@ export default function Particless() {
   }, []);
 
   return (
-
-    <div className="">
+    <div className="relative !overflow-hidden">
       <Particles
         id="tsparticles"
         init={particlesInit}
         loaded={particlesLoaded}
-        className=""
+        className="absolute inset-0"
         options={{
           background: {
             color: {
@@ -55,10 +51,10 @@ export default function Particless() {
           },
           particles: {
             color: {
-              value: "#B04870",
+              value: "#FF0000",
             },
             links: {
-              color: "#B04870",
+              color: "#FF0000",
               distance: 150,
               enable: true,
               opacity: 1,
@@ -91,52 +87,52 @@ export default function Particless() {
               type: "image",
               images: [
                 {
-                  src: "/avatar/1.png",
+                  src: "/faidenimage/1.png",
                   width: 100,
                   height: 100,
                 },
                 {
-                  src: "/avatar/2.png",
+                  src: "/faidenimage/2.png",
                   width: 100,
                   height: 100,
                 },
                 {
-                  src: "/avatar/3.png",
+                  src: "/faidenimage/3.png",
                   width: 100,
                   height: 100,
                 },
                 {
-                  src: "/avatar/4.png",
+                  src: "/faidenimage/4.png",
                   width: 100,
                   height: 100,
                 },
                 {
-                  src: "/avatar/5.png",
+                  src: "/faidenimage/5.png",
                   width: 100,
                   height: 100,
                 },
                 {
-                  src: "/avatar/6.png",
+                  src: "/faidenimage/6.png",
                   width: 100,
                   height: 100,
                 },
                 {
-                  src: "/avatar/7.png",
+                  src: "/faidenimage/7.png",
                   width: 100,
                   height: 100,
                 },
                 {
-                  src: "/avatar/8.png",
+                  src: "/faidenimage/8.png",
                   width: 100,
                   height: 100,
                 },
                 {
-                  src: "/avatar/9.png",
+                  src: "/faidenimage/9.png",
                   width: 100,
                   height: 100,
                 },
                 {
-                  src: "/avatar/10.png",
+                  src: "/faidenimage/10.png",
                   width: 100,
                   height: 100,
                 },
@@ -149,6 +145,9 @@ export default function Particless() {
           detectRetina: true,
         }}
       />
+      <div className="absolute inset-0 flex items-center justify-center">
+        {/* Your content section goes here */}
+      </div>
     </div>
   );
 }
