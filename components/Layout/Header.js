@@ -148,7 +148,7 @@ export default function Header() {
             />
           )}
 
-          <span className="text-xl md:text-2xl lg:text-3xl font-semibold text-primary">
+          <span className="text-xl md:text-2xl lg:text-3xl font-semibold !text-primary">
             Amerika Fleg
           </span>
         </div>

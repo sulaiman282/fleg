@@ -19,12 +19,12 @@ export default function Document() {
           rel="stylesheet"
         />
 
-        <meta name="title" content="Project Fada" />
+        <meta name="title" content="Fleg" />
         <meta
           name="description"
-          content="This is our Project Fada official site."
+          content="Uniting tickers, Join now."
         />
-        <meta name="keywords" content="Fada, Fadaform,Project fada" />
+        <meta name="keywords" content="Fleg" />
         <meta name="robots" content="index, follow" />
         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="language" content="English" />
