@@ -2,18 +2,12 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Button, IconButton } from "@mui/material";
-import PhoneInTalkIcon from "@mui/icons-material/PhoneInTalk";
 import Drawer from "react-modern-drawer";
 import "react-modern-drawer/dist/index.css";
 import MenuIcon from "@mui/icons-material/Menu";
 import ReplyIcon from "@mui/icons-material/Reply";
 import useWindowSize from "../../hooks/useWindowSize";
-import LockIcon from "@mui/icons-material/Lock";
-import InputLabel from "@mui/material/InputLabel";
-import MenuItem from "@mui/material/MenuItem";
-import FormHelperText from "@mui/material/FormHelperText";
-import FormControl from "@mui/material/FormControl";
-import Select from "@mui/material/Select";
+
 
 export default function Header() {
   const [activeSection, setActiveSection] = useState("hero");
@@ -117,7 +111,7 @@ export default function Header() {
     <nav
       className={`${
         scrollHeight > 200
-          ? "bg-white border-b border-gray-50 shadow-md"
+          ? "backdrop-blur-md bg-white/80 shadow-md"
           : " bg-transparent"
       } duration-300 fixed w-full top-0 z-40 left-1/2 -translate-x-1/2 py-1`}
     >
@@ -175,7 +169,7 @@ export default function Header() {
               scrollHeight > 200
                 ? activeSection == "hero"
                   ? "text-white"
-                  : "text-gray-900"
+                  : "text-primary"
                 : "text-white"
             }`}
           >
@@ -192,7 +186,7 @@ export default function Header() {
               scrollHeight > 200
                 ? activeSection == "about"
                   ? "text-white"
-                  : "text-gray-900"
+                  : "text-primary"
                 : "text-white"
             }`}
           >
@@ -209,7 +203,7 @@ export default function Header() {
               scrollHeight > 200
                 ? activeSection == "roadmap"
                   ? "text-white"
-                  : "text-gray-900"
+                  : "text-primary"
                 : "text-white"
             }`}
           >
@@ -226,7 +220,7 @@ export default function Header() {
               scrollHeight > 200
                 ? activeSection == "team"
                   ? "text-white"
-                  : "text-gray-900"
+                  : "text-primary"
                 : "text-white"
             }`}
           >

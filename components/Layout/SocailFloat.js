@@ -7,40 +7,59 @@ export default function SocailFloat() {
       <div className=" ">
         <div className="sticky-icon ">
           <a
-            href={`https://magiceden.io/collections/polygon/project_fada`}
+            href={`https://t.me/FlegDuAmerika`}
             target="_blank"
             rel="noreferrer"
-            className=" backdrop-blur-lg bg-white/20 flex justify-between items-center mx-5 shadow-md "
+            className=" backdrop-blur-lg bg-white/20 hover:bg-white/70 duration-300 flex justify-between items-center mx-5 shadow-md "
           >
             <p className="text-center w-full text-primary font-bold">
-              Magiceden{" "}
+             Telegram
             </p>
             <Image
               placeholder="blur"
-              src="/link1.png"
+              src="/telegram.png"
               width={100}
               height={100}
-              alt="Picture of the author"
+              alt="logo"
               blurDataURL="/blur.png"
               className="object-contain h-8 w-8 mr-2 "
             />
           </a>
 
           <a
-            href={`https://opensea.io/collection/project-fada`}
+            href={`https://twitter.com/FlegDuAmerika`}
             target="_blank"
             rel="noreferrer"
-            className=" backdrop-blur-lg bg-white/20 flex justify-between items-center mx-5 shadow-md"
+            className=" backdrop-blur-lg bg-white/20 hover:bg-white/70 duration-300 flex justify-between items-center mx-5 shadow-md"
           >
             <p className="text-center w-full text-sky-700 font-bold">
-              Opensea{" "}
+              Twitter
             </p>
             <Image
               placeholder="blur"
-              src="/link2.svg"
+              src="/twitter.png"
               width={100}
               height={100}
-              alt="Picture of the author"
+              alt="logo"
+              blurDataURL="/blur.png"
+              className="object-contain h-8 w-8  mr-2"
+            />
+          </a>
+          <a
+            href={`https://dexscreener.com/solana/3wladydq5nzqlhvkjfarrnsfzzjt2fqlta2ry86eiguq`}
+            target="_blank"
+            rel="noreferrer"
+            className=" backdrop-blur-lg bg-white/20 hover:bg-white/70 duration-300 flex justify-between items-center mx-5 shadow-md"
+          >
+            <p className="text-center w-full text-sky-700 font-bold">
+            Dexscreener
+            </p>
+            <Image
+              placeholder="blur"
+              src="/dexscreener.png"
+              width={100}
+              height={100}
+              alt="logo"
               blurDataURL="/blur.png"
               className="object-contain h-8 w-8  mr-2"
             />
