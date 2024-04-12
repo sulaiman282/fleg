@@ -9,7 +9,7 @@ const AudioPlayer = ({ audioRef, isPlaying, setIsPlaying, togglePlay }) => {
     <div className="fixed bottom-0 left-0 m-5 ">
       <audio
         ref={audioRef}
-        src="/audio.mp3"
+        src="/audio1.mp3"
         autoPlay
         loop
         className="pointer-events-none"
