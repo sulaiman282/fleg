@@ -13,7 +13,7 @@ export default function SocailFloat() {
             className=" backdrop-blur-lg bg-white/20 hover:bg-white/70 duration-300 flex justify-between items-center mx-5 shadow-md "
           >
             <p className="text-center w-full text-primary font-bold">
-             Telegram
+              Telegram
             </p>
             <Image
               placeholder="blur"
@@ -32,9 +32,7 @@ export default function SocailFloat() {
             rel="noreferrer"
             className=" backdrop-blur-lg bg-white/20 hover:bg-white/70 duration-300 flex justify-between items-center mx-5 shadow-md"
           >
-            <p className="text-center w-full text-sky-700 font-bold">
-              Twitter
-            </p>
+            <p className="text-center w-full text-sky-700 font-bold">Twitter</p>
             <Image
               placeholder="blur"
               src="/twitter.png"
@@ -52,7 +50,7 @@ export default function SocailFloat() {
             className=" backdrop-blur-lg bg-white/20 hover:bg-white/70 duration-300 flex justify-between items-center mx-5 shadow-md"
           >
             <p className="text-center w-full text-sky-700 font-bold">
-            Dexscreener
+              Dexscreener
             </p>
             <Image
               placeholder="blur"

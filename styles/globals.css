@@ -226,3 +226,23 @@ body::-webkit-scrollbar-thumb {
     display: none !important;
   }
 }
+
+@keyframes bounceCustom {
+  0%, 100% {
+    transform: translateY(0); /* Start and end position */
+  }
+  50% {
+    transform: translateY(-20px); /* Bouncing position */
+  }
+}
+
+.svg-element  svg{
+  animation: bounceCustom 1s infinite; /* Adjust animation duration as needed */
+}
+
+.MuiDropzoneArea-textContainer {
+  display: flex !important;
+  flex-direction: column-reverse !important;
+  align-items: center !important;
+  justify-content: center !important; 
+}

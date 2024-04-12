@@ -9,6 +9,7 @@ export default function PreloadingScreen({ togglePlay1, handleToggleVideo1 }) {
 
   useEffect(() => {
     if (show === false) {
+      scrollTo(0, 0);
       document.body.classList.add("overflow-hidden");
     }
   }, [show]);

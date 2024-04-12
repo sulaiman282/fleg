@@ -16,8 +16,36 @@ export default function Scroller() {
   };
 
   const Scrolltotop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    const start = performance.now(); // Get the current timestamp
+    const startPosition = height; // Current scroll position
+    const targetPosition = 0; // Target scroll position (300px from the top)
+    const totalHeight = document.body.scrollHeight - window.innerHeight; // Calculate total scrollable height
+    const remainingDistance = Math.abs(targetPosition - startPosition); // Remaining distance to scroll
+    const totalDuration = 2000; // Total duration for smooth scroll (3 seconds)
+    const scrollDuration = (remainingDistance / totalHeight) * totalDuration; // Calculate duration based on remaining distance
+
+    // Define the scroll function
+    const scrollStep = (timestamp) => {
+      const elapsed = timestamp - start; // Calculate elapsed time
+
+      // Calculate the new scroll position based on elapsed time
+      const newPosition =
+        startPosition +
+        (targetPosition - startPosition) * (elapsed / scrollDuration);
+
+      // Scroll to the new position
+      window.scrollTo({ top: newPosition, behavior: "smooth" });
+
+      // Continue scrolling if duration not elapsed
+      if (elapsed < scrollDuration) {
+        requestAnimationFrame(scrollStep);
+      }
+    };
+
+    // Start scrolling
+    requestAnimationFrame(scrollStep);
   };
+
   return (
     <>
       {height > 400 && (
@@ -27,7 +55,7 @@ export default function Scroller() {
             className="text-primary w-fit h-fit"
             onClick={Scrolltotop}
           >
-            <KeyboardArrowUpIcon className="bg-white rounded-full text-primary shadow-lg focus:text-white text-4xl " />
+            <KeyboardArrowUpIcon className="bg-white rounded-full text-primary shadow-lg focus:text-white !text-[40px] " />
           </IconButton>
         </div>
       )}

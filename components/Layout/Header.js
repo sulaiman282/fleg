@@ -8,7 +8,6 @@ import MenuIcon from "@mui/icons-material/Menu";
 import ReplyIcon from "@mui/icons-material/Reply";
 import useWindowSize from "../../hooks/useWindowSize";
 
-
 export default function Header() {
   const [activeSection, setActiveSection] = useState("hero");
 
@@ -175,7 +174,22 @@ export default function Header() {
           >
             Home
           </button>
-
+          <button
+            onClick={() => smoothScrollToSection("ayp")}
+            className={`${
+              activeSection == "ayp"
+                ? "bg-primary shadow px-3  py-1 rounded-full text-white font-bold "
+                : "hover:bg-primary hover:text-white hover:px-3 hover:py-1 hover:rounded-full duration-300"
+            }  duration-300 lg:text-[20px]   ${
+              scrollHeight > 200
+                ? activeSection == "ayp"
+                  ? "text-white"
+                  : "text-primary"
+                : "text-white"
+            }`}
+          >
+            A.Y.P
+          </button>
           <button
             onClick={() => smoothScrollToSection("about")}
             className={`${
@@ -226,6 +240,14 @@ export default function Header() {
           >
             Team
           </button>
+          <Link href="https://raydium.io/swap/" target="_blank">
+            <Button
+              variant="contained"
+              className="bg-red-500 hover:bg-red-700 duration-300 rounded-full"
+            >
+              BUY $FLEG
+            </Button>
+          </Link>
         </div>
 
         <IconButton
@@ -284,6 +306,19 @@ export default function Header() {
             >
               Home
             </button>
+            <button
+              onClick={() => {
+                smoothScrollToSection("ayp");
+                toggleDrawer();
+              }}
+              className={`${
+                activeSection == "ayp"
+                  ? "bg-primary px-3  py-1 rounded-full text-white font-bold "
+                  : "hover:bg-primary hover:text-white hover:px-3 hover:py-1 hover:rounded-full duration-300"
+              }  duration-300 lg:text-[20px]  `}
+            >
+              A.Y.P
+            </button>
 
             <button
               onClick={() => {
@@ -326,7 +361,14 @@ export default function Header() {
             >
               Team
             </button>
-       
+            <Link href="https://raydium.io/swap/" target="_blank">
+              <Button
+                variant="contained"
+                className="bg-red-500 hover:bg-red-700 duration-300 rounded-full"
+              >
+                BUY $FLEG
+              </Button>
+            </Link>
           </div>
         </div>
       </Drawer>

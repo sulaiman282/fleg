@@ -7,6 +7,7 @@ import DownloadIcon from "@mui/icons-material/Download";
 import ReplayIcon from "@mui/icons-material/Replay";
 import { toast } from "react-toastify";
 import imageCompression from "browser-image-compression";
+import Image from "next/image";
 
 export default function ImageEditorContainer() {
   const [files, setFiles] = useState([]);
@@ -45,7 +46,7 @@ export default function ImageEditorContainer() {
             "Cache-Control": "no-cache",
           },
           responseType: "blob",
-        },
+        }
       );
 
       setIsLoading(false);
@@ -91,29 +92,49 @@ export default function ImageEditorContainer() {
   }, [files]);
 
   return (
-    <div className="bg-slate-100 py-5 lg:py-10">
+    <section className="bg-slate-100 py-5 lg:py-10 min-h-screen flex  items-center w-full" id="ayp">
       <div className="container-sk  ">
-        <h2 className="text-center lg:text-5xl md:text-4xl text-3xl font-extrabold animate__animated animate__fadeIn mb-5 text-primary ">
+        <h2 className="text-center lg:text-5xl md:text-4xl text-3xl font-extrabold animate__animated animate__fadeIn mb-5 lg:mb-10 text-primary ">
           Amerikanize Your Pfp
         </h2>
 
         {!previewUrl ? (
-          <>
+          <div className="flex container-sk md:flex-row flex-col gap-4 lg:gap-8 lg:h-[50vh]">
+            <Image
+              placeholder="blur"
+              src={"/c1.jpg"}
+              width={500}
+              height={500}
+              alt="sample"
+              blurDataURL="/blur.png"
+              className=" w-full h-full  md:w-1/2 "
+            />
             {!isLoading ? (
-              <div className="aspect-video lg:w-1/2 mx-auto">
+              <div className="aspect-video lg:w-1/2 w-full mx-auto">
                 <FileUploader setFiles={setFiles} />
               </div>
             ) : (
-              <div className="aspect-video bg-white lg:w-1/2  mx-auto flex flex-col justify-center items-center gap-4 border-2 rounded-lg border-dashed border-primary p-5">
+              <div className="aspect-video bg-white lg:w-1/2 w-full  mx-auto flex flex-col justify-center items-center gap-4 border-2 rounded-lg border-dashed border-primary p-5">
                 <CircularProgress />
                 <p className="text-center">
                   Please wait while we are processing your image
                 </p>
               </div>
             )}
-          </>
+          </div>
         ) : (
-          <div className=" lg:w-1/2 mx-auto aspect-video">
+
+          <div className="flex container-sk md:flex-row flex-col gap-4 lg:gap-8 lg:h-[50vh]">
+          <Image
+            placeholder="blur"
+            src={"/c1.jpg"}
+            width={500}
+            height={500}
+            alt="sample"
+            blurDataURL="/blur.png"
+            className=" w-full h-full  md:w-1/2 "
+          />
+          <div className=" md:w-1/2 w-full mx-auto ">
             <img
               src={previewUrl}
               alt="Background Removed  "
@@ -136,8 +157,9 @@ export default function ImageEditorContainer() {
               </Button>
             </div>
           </div>
+          </div>
         )}
       </div>
-    </div>
+    </section>
   );
 }

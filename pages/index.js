@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import Head from "next/head";
-import Hero from "../components/Home/Hero";
 import About from "../components/Home/About";
-import Genarated from "../components/Home/GenaratedSlider/SliderPhoto";
 import SliderPhoto from "../components/Home/SliderPhoto/SliderPhoto";
 import Roadmap from "../components/Home/Roadmap";
 import Team from "../components/Home/Team";
@@ -15,9 +13,7 @@ export default function Index() {
       <Head>
         <title>Fada</title>
       </Head>
-
       <div className="overflow-hidden ">
-        {/* <Hero /> */}
         <ImageEditorContainer />
         <section
           className="bg-primary bg-no-repeat bg-cover bg-center min-h-screen flex flex-col justify-center "
@@ -30,7 +26,6 @@ export default function Index() {
             <SliderPhoto />
           </div>
         </section>
-        {/* <Genarated /> */}
         <Roadmap />
         <Team />
         <Footer />
