@@ -5,20 +5,21 @@ import CircularProgress from "@mui/material/CircularProgress";
 import Button from "@mui/material/Button";
 import DownloadIcon from "@mui/icons-material/Download";
 import ReplayIcon from "@mui/icons-material/Replay";
+import { toast } from "react-toastify";
 
 export default function ImageEditorContainer() {
   const [files, setFiles] = useState([]);
+  const [filename, setFileName] = useState('');
   const [previewUrl, setPreviewUrl] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
 
   const handleBackgroundRemoval = async () => {
     if (files.length === 0) return;
-
-    const imageFile = files[0]; // Assuming the first file in the files array is the image
+    const imageFile = files[0]; 
+    setFileName(files[0]?.name)
     const convertedFile = new File([imageFile], "filename.png", {
       type: "image/png",
     });
-
     setIsLoading(true);
     try {
       const formData = new FormData();
@@ -30,6 +31,7 @@ export default function ImageEditorContainer() {
         {
           headers: {
             "Content-Type": "multipart/form-data",
+            'Cache-Control' : 'max-age=3600'
           },
           responseType: "blob", // Set responseType to 'blob' to receive Blob data
         }
@@ -61,19 +63,14 @@ export default function ImageEditorContainer() {
   };
 
   const handleDownloadImage = () => {
-    // Check if there's a preview image URL
     if (previewUrl) {
-      // Create a temporary anchor element
       const downloadLink = document.createElement("a");
       downloadLink.href = previewUrl;
-      downloadLink.download = "background_removed_image.png"; // Set the default filename for download
+      downloadLink.download = filename; 
       document.body.appendChild(downloadLink);
-      downloadLink.click(); // Simulate a click event to trigger the download
-      document.body.removeChild(downloadLink); // Remove the anchor element from the DOM
-    } else {
-      // If no preview image URL is available
-      toast.warn("No image to download. Please process an image first.");
-    }
+      downloadLink.click(); 
+      document.body.removeChild(downloadLink);
+    } 
   };
 
   useEffect(() => {
