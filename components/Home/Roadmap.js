@@ -40,7 +40,7 @@ export default function Roadmap() {
 
         <div className="min-h-[80vh] py-10 md:h-screen flex   justify-center items-center">
           <ScrollAnimation animateIn="fadeIn" animateOut="fadeIn" className="">
-          <Image
+            <Image
               src="/faidenimage/12.png"
               width={500}
               height={500}
@@ -51,16 +51,16 @@ export default function Roadmap() {
               2.GET SOM SOL
             </h4>
             <p className="font-extrabold   text-center text-white lg:text-5xl md:text-4xl text-3xl mt-5 uppercase">
-              Hav SOL in yur wolet to switch to $FLEG. If yu dun&lsquo;t hav any SOL,
-              yu can buy direktly on Phantom, transfer frum anuther wolet, or
-              buy on another ekchange and send it to yur wolet.
+              Hav SOL in yur wolet to switch to $FLEG. If yu dun&lsquo;t hav any
+              SOL, yu can buy direktly on Phantom, transfer frum anuther wolet,
+              or buy on another ekchange and send it to yur wolet.
             </p>
           </ScrollAnimation>
         </div>
 
         <div className="min-h-[80vh] py-10 md:h-screen flex   justify-center items-center">
           <ScrollAnimation animateIn="fadeIn" animateOut="fadeIn" className="">
-          <Image
+            <Image
               src="/faidenimage/16.png"
               width={500}
               height={500}
@@ -81,7 +81,7 @@ export default function Roadmap() {
 
         <div className="min-h-[80vh] py-10 md:h-screen flex   justify-center items-center">
           <ScrollAnimation animateIn="fadeIn" animateOut="fadeIn" className="">
-          <Image
+            <Image
               src="/faidenimage/19.png"
               width={500}
               height={500}
@@ -92,8 +92,8 @@ export default function Roadmap() {
               4.$FLEG
             </h4>
             <p className="font-extrabold   text-center text-white lg:text-5xl md:text-4xl text-3xl mt-5 uppercase">
-              Swap SOL for $FLEG. We hav Zero taxes so yu don&lsquo;t ned to warry
-              about buying with a specifik slippage, although you may.
+              Swap SOL for $FLEG. We hav Zero taxes so yu don&lsquo;t ned to
+              warry about buying with a specifik slippage, although you may.
             </p>
           </ScrollAnimation>
         </div>

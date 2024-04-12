@@ -198,22 +198,6 @@ export default function Header() {
           >
             About
           </button>
-          {/* <button
-            onClick={() => smoothScrollToSection("nft_Gallery")}
-            className={`${
-              activeSection == "nft_Gallery"
-                ? "bg-primary  shadow px-3 py-1 rounded-full text-white font-bold "
-                : "hover:bg-primary hover:text-white hover:px-3 hover:py-1 hover:rounded-full duration-300"
-            }  duration-300 lg:text-[20px]   ${
-              scrollHeight > 200
-                ? activeSection == "nft_Gallery"
-                  ? "text-white"
-                  : "text-gray-900"
-                : "text-white"
-            }`}
-          >
-            1/1&nbsp;Gallery
-          </button> */}
 
           <button
             onClick={() => smoothScrollToSection("roadmap")}
@@ -248,77 +232,6 @@ export default function Header() {
           >
             Team
           </button>
-
-          <div className="relative group  ">
-            <button
-              className={`text-base ${
-                scrollHeight > 200
-                  ? activeSection == "tools"
-                    ? "text-white"
-                    : "text-gray-900"
-                  : "text-white"
-              }`}
-            >
-              Tools
-            </button>
-            <div
-              className={`   duration-300 group-hover:block hidden absolute top-0 left-1/2 -translate-x-1/2  mt-6 ${
-                scrollHeight > 200 ? "pt-7" : "pt-2"
-              }`}
-            >
-              <Link
-                href="https://gm.projectfada.com/"
-                target="_blank"
-                className="text-white  duration-300 "
-              >
-                <Button
-                  variant="contained"
-                  className="capitalize backdrop-blur-sm hover:bg-primary  px-2 py-1 rounded-md shadow-lg bg-white/20  text-base"
-                >
-                  GM&nbsp;Gallery
-                </Button>
-              </Link>
-            </div>
-          </div>
-          <Link
-            href="https://frs.projectfada.com/"
-            target="_blank"
-            className="text-white  duration-300 "
-          >
-            <button
-              className={`flex gap-1 items-center  duration-300 lg:text-[20px]  hover:px-5 py-1 rounded-full hover:bg-primary hover:text-white  ${
-                scrollHeight > 200
-                  ? activeSection == "contact"
-                    ? "text-white"
-                    : "text-gray-900"
-                  : "text-white"
-              }`}
-            >
-              FRS
-            </button>
-          </Link>
-
-          <div className="ml-3 flex gap-3 items-center">
-            <Link
-              className=""
-              target="_blank"
-              href="https://discord.com/invite/AjyE8755ZQ"
-            >
-              <IconButton className="text-[20px] w-10 h-10 text-primary bg-gray-100 hover:bg-primary hover:text-white duration-300">
-                <i className="fa-brands fa-discord " />
-              </IconButton>
-            </Link>
-
-            <Link
-              className=""
-              target="_blank"
-              href="https://twitter.com/ProjectFADA"
-            >
-              <IconButton className="text-[20px] w-10 h-10 text-primary bg-gray-100 hover:bg-primary hover:text-white duration-300">
-                <i className="fa-brands fa-twitter " />
-              </IconButton>
-            </Link>
-          </div>
         </div>
 
         <IconButton
@@ -391,19 +304,6 @@ export default function Header() {
             >
               About
             </button>
-            {/* <button
-              onClick={() => {
-                smoothScrollToSection("nft_Gallery");
-                toggleDrawer();
-              }}
-              className={`${
-                activeSection == "nft_Gallery"
-                  ? "bg-primary px-3 py-1 rounded-full text-white font-bold "
-                  : "hover:bg-primary hover:text-white hover:px-3 hover:py-1 hover:rounded-full duration-300"
-              }  duration-300 lg:text-[20px]  `}
-            >
-              1/1&nbsp;Gallery
-            </button> */}
 
             <button
               onClick={() => {
@@ -432,62 +332,7 @@ export default function Header() {
             >
               Team
             </button>
-            <Link
-              href="https://frs.projectfada.com/"
-              target="_blank"
-              className="text-white  duration-300 "
-            >
-              <button
-                className={`flex gap-1 items-center  duration-300 lg:text-[20px]   ${
-                  scrollHeight > 200
-                    ? activeSection == "contact"
-                      ? "text-white"
-                      : "text-gray-900"
-                    : "text-white"
-                }`}
-              >
-                FRS
-              </button>
-            </Link>
-
-            <div className="flex flex-col justify-center mt-10">
-              <span className="underline underline-offset-4 text-base lg:text-lg">
-                {" "}
-                Tools
-              </span>
-            </div>
-
-            <Link
-              href="https://gm.projectfada.com/"
-              className="hover:bg-primary px-3 py-1 rounded-full hover:text-white duration-300 lg:text-lg"
-              target="_blank"
-            >
-              GM Gallery
-            </Link>
-
-            <div className="flex gap-1 items-center mt-10">
-              <Link
-                className=""
-                onClick={(e) => toggleDrawer()}
-                target="_blank"
-                href="https://discord.com/invite/AjyE8755ZQ"
-              >
-                <IconButton className="text-[20px] w-10 h-10 text-primary bg-gray-100 hover:bg-primary hover:text-white duration-300">
-                  <i className="fa-brands fa-discord " />
-                </IconButton>
-              </Link>
-
-              <Link
-                className=""
-                target="_blank"
-                onClick={(e) => toggleDrawer()}
-                href="https://twitter.com/ProjectFADA"
-              >
-                <IconButton className="text-[20px] w-10 h-10 text-primary bg-gray-100 hover:bg-primary hover:text-white duration-300">
-                  <i className="fa-brands fa-twitter " />
-                </IconButton>
-              </Link>
-            </div>
+       
           </div>
         </div>
       </Drawer>
