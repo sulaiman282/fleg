@@ -15,7 +15,7 @@ const FileUploader = ({ setFiles }) => {
       filesLimit={1}
       showPreviewsInDropzone={false}
       showPreviews={false}
-      dropzoneClass="h-full !flex !flex-col !items-center !justify-center gap-4 border-2 rounded-lg svg-element  !border-dashed !border-primary"
+      dropzoneClass="h-full !flex !flex-col !items-center !justify-center gap-4 border-2 rounded-lg svg-element  !border-dashed !border-primary bg-[url('/up.gif')] bg-cover bg-center  bg-no-repeat"
       dropzoneParagraphClass="text-primary-color !font-sans  lg:text-2xl text-xl"
      
     />

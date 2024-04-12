@@ -1,10 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import ScrollAnimation from "react-animate-on-scroll";
 import { Button } from "@mui/material";
 import Link from "next/link";
+import { toast } from "react-toastify";
 
 export default function Footer() {
+  const[isCopied,setIsCopied]= useState(false)
+  const handleClick = async () => {
+    if(!isCopied){
+      const textToCopy = "CA : AmEriCAq4JpHxZNBNEaKJb1VRptQGv1CRHz5ytNqBpN";
+    
+      try {
+        await navigator.clipboard.writeText(textToCopy);
+        toast.success("Copied");
+        setIsCopied(true)
+      } catch (error) {
+        console.error('Unable to copy text: ', error);
+      }
+    }
+   
+  };
+  
+  
   return (
     <div className="bg-[url('/footer.png')] bg-cover bg-center  bg-no-repeat">
       <div className="w-full backdrop-brightness-75  backdrop-blur-sm  relative">
@@ -48,6 +66,14 @@ export default function Footer() {
                     a meme coin with no intrinsic value or expectation of
                     financial return.
                   </p>
+
+                  <Button
+                  onClick={handleClick}
+                      className="text-primary shadow-none hover:text-white mt-4  lg:text-3xl text-xl px-5 py-3 lg:px-10 "
+                      variant="contained"
+                    >
+                      CA : AmEriCAq4JpHxZNBNEaKJb1VRptQGv1CRHz5ytNqBpN
+                    </Button>
                 </div>
               </div>
             </ScrollAnimation>
