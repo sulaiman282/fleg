@@ -9,7 +9,7 @@ export default function SliderCard({ data }) {
         src={data}
         width={500}
         height={500}
-        alt="Picture of the author"
+        alt={data}
         blurDataURL="/blur.png"
         className="object-cover rounded-xl aspect-square overflow-hidden w-full hover:scale-105 duration-300 cursor-grab"
       />
