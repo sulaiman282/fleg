@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Image from "next/image";
 import ScrollAnimation from "react-animate-on-scroll";
 import { Button } from "@mui/material";
 import Link from "next/link";
@@ -48,13 +47,7 @@ export default function Footer({ videoRef }) {
             >
               <div className="   ">
                 <div className="flex  flex-col justify-center items-center   h-fit w-fit gap-4 lg:gap-8   p-10 ">
-                  <Image
-                    src="/logo.png"
-                    width={500}
-                    height={500}
-                    alt="logo"
-                    className="lg:w-40 lg:h-40 h-25 w-24 hover:rotate-[360deg] duration-1000 object-contain cursor-wait"
-                  />
+             
                   <Link
                     href="https://magiceden.io/collections/polygon/project_fada"
                     target="_blank"
@@ -75,7 +68,7 @@ export default function Footer({ videoRef }) {
 
                   <Button
                     onClick={handleClick}
-                    className="text-primary shadow-none hover:text-white mt-4  lg:text-3xl text-xl px-5 py-3 lg:px-10 "
+                    className="text-primary shadow-none hover:text-white mt-4  lg:text-3xl text-xl px-5 py-3 lg:px-10 break-all"
                     variant="contained"
                   >
                     CA : AmEriCAq4JpHxZNBNEaKJb1VRptQGv1CRHz5ytNqBpN
