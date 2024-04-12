@@ -51,7 +51,7 @@ export default function Roadmap() {
               2.GET SOM SOL
             </h4>
             <p className="font-extrabold   text-center text-white lg:text-5xl md:text-4xl text-3xl mt-5 uppercase">
-              Hav SOL in yur wolet to switch to $FLEG. If yu dun't hav any SOL,
+              Hav SOL in yur wolet to switch to $FLEG. If yu dun&lsquo;t hav any SOL,
               yu can buy direktly on Phantom, transfer frum anuther wolet, or
               buy on another ekchange and send it to yur wolet.
             </p>
@@ -92,7 +92,7 @@ export default function Roadmap() {
               4.$FLEG
             </h4>
             <p className="font-extrabold   text-center text-white lg:text-5xl md:text-4xl text-3xl mt-5 uppercase">
-              Swap SOL for $FLEG. We hav Zero taxes so yu don't ned to warry
+              Swap SOL for $FLEG. We hav Zero taxes so yu don&lsquo;t ned to warry
               about buying with a specifik slippage, although you may.
             </p>
           </ScrollAnimation>
