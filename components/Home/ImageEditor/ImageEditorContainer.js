@@ -20,6 +20,8 @@ export default function ImageEditorContainer() {
     const convertedFile = new File([imageFile], "filename.png", {
       type: "image/png",
     });
+
+    
     setIsLoading(true);
     try {
       const formData = new FormData();
@@ -29,12 +31,12 @@ export default function ImageEditorContainer() {
         process.env.NEXT_PUBLIC_API_URL,
         formData,
         {
-          headers: {
-            "Content-Type": "multipart/form-data",
-            'Cache-Control' : 'max-age=3600'
-          },
-          responseType: "blob", // Set responseType to 'blob' to receive Blob data
-        }
+            headers: {
+              "Content-Type": "multipart/form-data", 
+              'Cache-Control' : 'no-cache'
+            },
+            responseType: "blob", 
+          }
       );
 
       setIsLoading(false);
