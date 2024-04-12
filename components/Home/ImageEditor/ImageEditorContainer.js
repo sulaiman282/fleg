@@ -65,7 +65,7 @@ export default function ImageEditorContainer() {
       }
     } catch (error) {
       setIsLoading(false);
-      toast.error("Could not process the image. Please try again.");
+      // toast.error("Could not process the image. Please try again.");
     }
   };
 
@@ -123,7 +123,7 @@ export default function ImageEditorContainer() {
                 <CircularProgress />
                 <p className="text-center lg:text-3xl text-xl text-white">
                   Please wait while we are processing your image.<br/>
-                  (Will take 2)
+                  (Will take 10-30secs)
                 </p>
               </div>
             )}
