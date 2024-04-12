@@ -1,100 +1,102 @@
 import { IconButton } from "@mui/material";
 import React from "react";
 import LockOpenIcon from "@mui/icons-material/LockOpen";
-import LockIcon from "@mui/icons-material/Lock";
-
+import WalletIcon from "@mui/icons-material/Wallet";
 import ScrollAnimation from "react-animate-on-scroll";
+import Image from "next/image";
 
 export default function Roadmap() {
   return (
     <section
-      className="bg-[#AAC8E4] py-10 lg:py-28 md:py-20 min-h-[40vh] md:min-h-screen h-full"
+      className="bg-[#AAC8E4] bg-[url('/bg1.gif')] bg-cover bg-center  bg-no-repeat relative py-10 lg:py-28 md:py-20  md:min-h-screen h-full"
       id="roadmap"
     >
       <div className="container-sk">
-        <div>
-          <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
-            <h4 className=" font-extrabold text-center text-white lg:text-6xl md:text-5xl text-4xl py-20 my-auto mt-5 ">
-              ROADMAP
+        <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
+          <h4 className=" font-extrabold text-center text-white lg:text-6xl md:text-5xl text-4xl py-20 my-auto mt-5 ">
+            How to buy
+          </h4>
+        </ScrollAnimation>
+
+        <div className="min-h-[80vh] py-10 md:h-screen flex   justify-center items-center">
+          <ScrollAnimation animateIn="fadeIn" animateOut="fadeIn" className="">
+            <Image
+              src="/faidenimage/13.png"
+              width={500}
+              height={500}
+              alt="logo"
+              className="object-cover lg:h-40 h-28 w-28 lg:w-40 aspect-square mx-auto rounded-full overflow-hidden mb-5 lg:mb-10"
+            />
+            <h4 className="font-extrabold text-primary text-center  lg:text-5xl md:text-4xl text-3xl my-auto mt-5 ">
+              1.CREATE A WOLET
             </h4>
+            <p className="font-extrabold   text-center text-white lg:text-5xl md:text-4xl text-3xl mt-5 uppercase">
+              Donlod Phantom or your wolet of choese from the app star or Gugle
+              Pley fur freh. Desktup users, donlod the Gugle Chrom ekstension by
+              gowing to Phantom.
+            </p>
           </ScrollAnimation>
-
-          <div className="h-[80vh]  flex justify-center items-center">
-            <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
-              <div className="flex justify-center ">
-                <IconButton className="bg-primary hover:bg-primary duration-300">
-                  <LockOpenIcon className="lg:text-3xl md:text-2xl rotate-[20deg] text-white" />
-                </IconButton>
-              </div>
-              <h4 className="font-extrabold text-center text-white lg:text-5xl md:text-4xl text-3xl my-auto mt-5 ">
-                SEASON I
-              </h4>
-            </ScrollAnimation>
-          </div>
-
-          <div className="h-[40vh] md:h-screen flex   justify-center items-center">
-            <ScrollAnimation
-              animateIn="fadeIn"
-              animateOut="fadeIn"
-              className=""
-            >
-              <p className="font-extrabold   text-center text-white lg:text-5xl md:text-4xl text-3xl mt-5 uppercase">
-                Introducing Community Tools.
-              </p>
-            </ScrollAnimation>
-          </div>
-
-          <div className="h-[40vh] md:h-screen flex   justify-center items-center">
-            <ScrollAnimation
-              animateIn="fadeIn"
-              animateOut="fadeIn"
-              className=""
-            >
-              <p className="font-extrabold text-center text-white lg:text-5xl md:text-4xl text-3xl mt-5 uppercase">
-                Initiating phase 2 Mint
-              </p>
-              <p className="text-sm lg:text-base text-white mt-5 lg:mt-12 text-center"></p>
-            </ScrollAnimation>
-          </div>
-
-          <div className="h-[40vh] md:h-screen   flex justify-center items-center">
-            <ScrollAnimation
-              animateIn="fadeIn"
-              animateOut="fadeIn"
-              className=""
-            >
-              <p className="font-extrabold text-center text-white lg:text-5xl md:text-4xl text-3xl mt-5 uppercase">
-                Launching the FADA Redemption System (FRS)
-              </p>
-              <p className="text-sm lg:text-base text-white mt-5 lg:mt-12 text-center"></p>
-            </ScrollAnimation>
-          </div>
         </div>
 
-        {/* <div className="flex flex-col justify-center items-center min-h-[40vh] md:h-screen">
-          <ScrollAnimation
-            animateOnce={true}
-            animateIn="fadeIn"
-            duration={2}
-            animateOut="fadeIn"
-          >
-            <div className="flex justify-center mt-10 lg:mt-28">
-              <IconButton className="bg-primary hover:bg-primary duration-300">
-                <LockIcon className="lg:text-3xl md:text-2xl rotate-[20deg] text-white" />
-              </IconButton>
-            </div>
-
-            <p className="font-extrabold text-center text-white lg:text-6xl md:text-5xl text-4xl mt-3">
-              AREA2
+        <div className="min-h-[80vh] py-10 md:h-screen flex   justify-center items-center">
+          <ScrollAnimation animateIn="fadeIn" animateOut="fadeIn" className="">
+          <Image
+              src="/faidenimage/12.png"
+              width={500}
+              height={500}
+              alt="logo"
+              className="object-cover lg:h-40 h-28 w-28 lg:w-40 aspect-square mx-auto rounded-full overflow-hidden mb-5 lg:mb-10"
+            />
+            <h4 className="font-extrabold text-primary text-center  lg:text-5xl md:text-4xl text-3xl my-auto mt-5 ">
+              2.GET SOM SOL
+            </h4>
+            <p className="font-extrabold   text-center text-white lg:text-5xl md:text-4xl text-3xl mt-5 uppercase">
+              Hav SOL in yur wolet to switch to $FLEG. If yu dun't hav any SOL,
+              yu can buy direktly on Phantom, transfer frum anuther wolet, or
+              buy on another ekchange and send it to yur wolet.
             </p>
-
-            <div className="flex justify-center">
-              <p className="text-sm lg:text-base text-white mt-5 lg:mt-7  w-fit bg-primary px-3 py-2 rotate-[-5deg]">
-                Lorem ipsum dolor Lorem ipsum dolor
-              </p>
-            </div>
           </ScrollAnimation>
-        </div> */}
+        </div>
+
+        <div className="min-h-[80vh] py-10 md:h-screen flex   justify-center items-center">
+          <ScrollAnimation animateIn="fadeIn" animateOut="fadeIn" className="">
+          <Image
+              src="/faidenimage/16.png"
+              width={500}
+              height={500}
+              alt="logo"
+              className="object-cover lg:h-40 h-28 w-28 lg:w-40 aspect-square mx-auto rounded-full overflow-hidden mb-5 lg:mb-10"
+            />
+            <h4 className="font-extrabold text-center text-primary lg:text-5xl md:text-4xl text-3xl my-auto mt-5 ">
+              3.GO TO RAYDIUM
+            </h4>
+            <p className="font-extrabold   text-center text-white lg:text-5xl md:text-4xl text-3xl mt-5 uppercase">
+              Conct to Raydium. Go to Raydium in gugle chrom or on the browsr
+              inside yur Phantom app. Connekt your wolet. Paste the $FLEG token
+              address into Raydium, selekt $FLEG, and confirm. Wen Phantom
+              prompts you for a wolet signature, sign.
+            </p>
+          </ScrollAnimation>
+        </div>
+
+        <div className="min-h-[80vh] py-10 md:h-screen flex   justify-center items-center">
+          <ScrollAnimation animateIn="fadeIn" animateOut="fadeIn" className="">
+          <Image
+              src="/faidenimage/19.png"
+              width={500}
+              height={500}
+              alt="logo"
+              className="object-cover lg:h-40 h-28 w-28 lg:w-40 aspect-square mx-auto rounded-full overflow-hidden mb-5 lg:mb-10"
+            />
+            <h4 className="font-extrabold text-center text-primary lg:text-5xl md:text-4xl text-3xl my-auto mt-5 ">
+              4.$FLEG
+            </h4>
+            <p className="font-extrabold   text-center text-white lg:text-5xl md:text-4xl text-3xl mt-5 uppercase">
+              Swap SOL for $FLEG. We hav Zero taxes so yu don't ned to warry
+              about buying with a specifik slippage, although you may.
+            </p>
+          </ScrollAnimation>
+        </div>
       </div>
     </section>
   );

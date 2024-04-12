@@ -75,6 +75,8 @@ const SimpleSlider = () => {
     "/faidenimage/14.png",
     "/faidenimage/16.png",
     "/faidenimage/17.png",
+    "/faidenimage/18.png",
+    "/faidenimage/19.png",
   ];
 
   return (

@@ -30,7 +30,7 @@ export default function Index() {
             <SliderPhoto />
           </div>
         </section>
-        <Genarated />
+        {/* <Genarated /> */}
         <Roadmap />
         <Team />
         <Footer />

@@ -198,7 +198,7 @@ export default function Header() {
           >
             About
           </button>
-          <button
+          {/* <button
             onClick={() => smoothScrollToSection("nft_Gallery")}
             className={`${
               activeSection == "nft_Gallery"
@@ -213,7 +213,7 @@ export default function Header() {
             }`}
           >
             1/1&nbsp;Gallery
-          </button>
+          </button> */}
 
           <button
             onClick={() => smoothScrollToSection("roadmap")}
@@ -229,7 +229,7 @@ export default function Header() {
                 : "text-white"
             }`}
           >
-            Roadmap
+            How to buy
           </button>
 
           <button
@@ -391,7 +391,7 @@ export default function Header() {
             >
               About
             </button>
-            <button
+            {/* <button
               onClick={() => {
                 smoothScrollToSection("nft_Gallery");
                 toggleDrawer();
@@ -403,7 +403,7 @@ export default function Header() {
               }  duration-300 lg:text-[20px]  `}
             >
               1/1&nbsp;Gallery
-            </button>
+            </button> */}
 
             <button
               onClick={() => {
@@ -416,7 +416,7 @@ export default function Header() {
                   : "hover:bg-primary hover:text-white hover:px-3 hover:py-1 hover:rounded-full duration-300"
               }  duration-300 lg:text-[20px]  `}
             >
-              Roadmap
+              How to buy
             </button>
 
             <button
