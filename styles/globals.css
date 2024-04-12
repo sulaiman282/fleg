@@ -1,0 +1,228 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* -------container size------------- */
+.container-sk {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .container-sk {
+    width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container-sk {
+    width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container-sk {
+    width: 1140px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container-sk {
+    width: 1320px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .container-sk {
+    width: 1550px;
+  }
+}
+/* -------------------------------------------------------------- */
+
+/* --------ScrollBar ----------- */
+
+/* scrollbar */
+
+body {
+  scroll-behavior: smooth !important;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #fcf9f1 !important;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #9e1d4d !important;
+}
+.curve1 {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 93%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 93%);
+}
+
+
+
+/* bounce the image */
+
+.bounce {
+  animation: bounce 4s infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0); /* Initial position */
+  }
+
+  50% {
+    transform: translateY(-20%); /* Bounce up */
+  }
+
+  100% {
+    transform: translateY(0); /* Back to initial position */
+  }
+}
+
+.sticky-icon {
+  z-index: 1;
+  position: fixed;
+  top: 15%;
+  left: 0;
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sticky-icon a {
+  transform: translate(-160px, 0px); /* Adjust the translate value */
+  border-radius: 0px 50px 50px 0px; /* Adjust the border-radius value */
+  text-align: right; /* Adjust the text alignment */
+  margin: 2px;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
+  transition: all 0.8s;
+}
+
+.sticky-icon a:hover {
+  transform: translate(0px, 0px);
+}
+
+.sticky-icon a:hover img {
+  animation: rotatef 1s forwards;
+}
+@keyframes rotatef {
+  0% {
+    rotate: 0deg;
+  }
+
+  100% {
+    rotate: -360deg;
+  }
+}
+
+#myBtn {
+  height: 50px;
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  text-align: center;
+  padding: 10px;
+  text-align: center;
+  line-height: 40px;
+  border: none;
+  outline: none;
+  background-color: #1e88e5;
+  color: white;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.fa-arrow-circle-up {
+  font-size: 30px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+/* -------------------------------------------- */
+/* slider arrow */
+
+.arrow_no_margin .react-multiple-carousel__arrow--right {
+  right: 0 !important;
+  z-index: 1 !important;
+}
+.arrow_no_margin .react-multiple-carousel__arrow--left {
+  left: 0 !important;
+  z-index: 1 !important;
+}
+.arrow_hide .react-multiple-carousel__arrow--right {
+  display: none !important;
+}
+.arrow_hide .react-multiple-carousel__arrow--left {
+  display: none !important;
+}
+
+/* Preloader Animation */
+
+.split-half1 {
+  animation: splitSlideAnimation 2s forwards;
+}
+
+@keyframes splitSlideAnimation {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+.split-half2 {
+  animation: splitSlideAnimation1 2s forwards;
+}
+
+@keyframes splitSlideAnimation1 {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+.split-half3 {
+  animation: splitSlideAnimation2 2s forwards;
+}
+
+@keyframes splitSlideAnimation2 {
+  0% {
+    opacity: 100;
+  }
+  50% {
+    opacity: 50;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+/* hide dots on mobile */
+@media (max-width: 768px) {
+  .my-carousel .react-multi-carousel-dot {
+    display: none !important;
+  }
+}
