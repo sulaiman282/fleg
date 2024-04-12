@@ -3,7 +3,6 @@ import Head from "next/head";
 import About from "../components/Home/About";
 import SliderPhoto from "../components/Home/SliderPhoto/SliderPhoto";
 import Roadmap from "../components/Home/Roadmap";
-import Footer from "../components/Home/Footer";
 import ImageEditorContainer from "../components/Home/ImageEditor/ImageEditorContainer.js";
 
 export default function Index() {
@@ -26,7 +25,7 @@ export default function Index() {
           </div>
         </section>
         <Roadmap />
-        <Footer />
+       
       </div>
     </>
   );

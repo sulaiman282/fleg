@@ -5,7 +5,7 @@ import { Button } from "@mui/material";
 import Link from "next/link";
 import { toast } from "react-toastify";
 
-export default function Footer() {
+export default function Footer({ videoRef }) {
   const [isCopied, setIsCopied] = useState(false);
   const handleClick = async () => {
     if (!isCopied) {
@@ -21,7 +21,16 @@ export default function Footer() {
   };
 
   return (
-    <div className="bg-[url('/footer.png')] bg-cover bg-center  bg-no-repeat">
+    <div className=" relative ">
+      <video
+        ref={videoRef}
+        loop
+        className="w-full  h-full object-fill  absolute top-0 left-0   pointer-events-none"
+        muted
+        playsInline
+      >
+        <source src="/video.mp4" type="video/mp4" />
+      </video>
       <div className="w-full backdrop-brightness-75  backdrop-blur-sm  relative">
         <h5 className="text-center absolute bottom-0 w-full mb-3 font-bold text-white lg:text-xl text-lg ">
           © 2024 $FLEG. All rights reserved.

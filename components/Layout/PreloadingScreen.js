@@ -11,8 +11,8 @@ export default function PreloadingScreen({ togglePlay1, handleToggleVideo1 }) {
     if (show === false) {
       window.scroll({
         top: 0,
-        behavior: "smooth" 
-      });      
+        behavior: "smooth",
+      });
       document.body.classList.add("overflow-hidden");
     }
   }, [show]);
@@ -62,7 +62,7 @@ export default function PreloadingScreen({ togglePlay1, handleToggleVideo1 }) {
                 <Avatar src="/fav.png" className="h-12 w-12"></Avatar>
               </IconButton>
               <span
-                 onClick={(e) => {
+                onClick={(e) => {
                   togglePlay1();
                   handleToggleVideo1();
                   setShow(true);

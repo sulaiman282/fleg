@@ -1,5 +1,5 @@
 import React, { useRef, useState, useEffect } from "react";
-import Footer from "./Footer";
+import Footer from "../Home/Footer.js";
 import Header from "./Header";
 import Social from "./SocailFloat";
 import Audio from "./Audio";
@@ -80,8 +80,9 @@ export default function Layout({ children }) {
         </header>
 
         <main>
-          <Hero videoRef={videoRef} handleToggleVideo1={handleToggleVideo1} />
+          <Hero  />
           {children}
+          <Footer videoRef={videoRef}/>
         </main>
         <Social />
         <Audio
