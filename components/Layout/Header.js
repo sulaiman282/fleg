@@ -46,6 +46,7 @@ export default function Header() {
 
   const windowsize = useWindowSize();
   const [ismobile, setIsmobile] = useState(false);
+  
   useEffect(() => {
     if (windowsize?.width < 1200) {
       setIsmobile(true);

@@ -18,10 +18,6 @@ function MyApp({ Component, pageProps, router }) {
 
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    setLoading(false);
-  }, []);
-
   NProgress.configure({ showSpinner: false });
   Router.events.on("routeChangeStart", () => {
     NProgress.start();
@@ -40,6 +36,10 @@ function MyApp({ Component, pageProps, router }) {
       fontFamily: "Darumadrop One, sans-serif",
     },
   });
+  
+  useEffect(() => {
+    setLoading(false);
+  }, []);
 
   return (
     <>

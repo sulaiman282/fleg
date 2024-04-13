@@ -3,7 +3,7 @@ import Head from "next/head";
 import About from "../components/Home/About";
 import SliderPhoto from "../components/Home/SliderPhoto/SliderPhoto";
 import Roadmap from "../components/Home/Roadmap";
-import ImageEditorContainer from "../components/Home/ImageEditor/ImageEditorContainer.js";
+import ImageEditorContainer from "../components/Home/ImageEditor/ImageEditorContainer";
 
 export default function Index() {
   return (
