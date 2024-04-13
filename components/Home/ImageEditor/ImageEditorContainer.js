@@ -122,7 +122,8 @@ export default function ImageEditorContainer() {
               <div className="aspect-video bg-white lg:w-1/2 w-full  mx-auto flex flex-col justify-center items-center gap-4 border-2 rounded-lg border-dashed border-primary p-5 bg-[url('/up.gif')] bg-cover bg-center  bg-no-repeat">
                 <CircularProgress />
                 <p className="text-center lg:text-3xl text-xl text-white">
-                  Please wait while we are processing your image.<br/>
+                  Please wait while we are processing your image.
+                  <br />
                   (It will take 10-30 secs)
                 </p>
               </div>

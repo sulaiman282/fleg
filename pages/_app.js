@@ -12,9 +12,9 @@ import Layout from "../components/Layout/Layout";
 import "animate.css/animate.min.css";
 
 function MyApp({ Component, pageProps, router }) {
-  // console.log = function () {};
-  // console.warn = function () {};
-  // console.error = function () {};
+  console.log = function () {};
+  console.warn = function () {};
+  console.error = function () {};
 
   const [loading, setLoading] = useState(true);
 

@@ -9,21 +9,14 @@ export default function Document() {
         />
 
         <link rel="icon" href="/fav.png" />
-        <link rel="stylesheet" href="/fontawesome/css/all.min.css" />
-        <script src="/fontawesome/js/all.min.js" defer></script>
-
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
         <link
           href="https://fonts.googleapis.com/css2?family=Darumadrop+One&display=swap"
           rel="stylesheet"
         />
-
         <meta name="title" content="Fleg" />
-        <meta
-          name="description"
-          content="Uniting tickers, Join now."
-        />
+        <meta name="description" content="Uniting tickers, Join now." />
         <meta name="keywords" content="Fleg" />
         <meta name="robots" content="index, follow" />
         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />

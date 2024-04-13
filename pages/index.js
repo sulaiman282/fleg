@@ -25,7 +25,6 @@ export default function Index() {
           </div>
         </section>
         <Roadmap />
-       
       </div>
     </>
   );
