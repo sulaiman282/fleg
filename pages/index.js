@@ -9,7 +9,7 @@ export default function Index() {
   return (
     <>
       <Head>
-        <title>Fada</title>
+        <title>Fleg</title>
       </Head>
       <div className="overflow-hidden ">
         <ImageEditorContainer />
