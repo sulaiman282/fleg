@@ -47,7 +47,7 @@ export default function Hero() {
         <Slider {...settings}>
           <div className=" cursor-grab whitespace-nowrap">
             <p onClick={(e)=>{handleSelectText(e)}} className="text-white text-2xl lg:text-4xl  text-center   leading-relaxed	 rounded-xl ">
-              Study the first 7 digit Vanity CA CA :
+              Study the first 7 digit Vanity CA :
               AmEriCAq4JpHxZNBNEaKJb1VRptQGv1CRHz5ytNqBpN
             </p>
           </div>
