@@ -48,7 +48,7 @@ export default function Footer({ videoRef }) {
               <div className="   ">
                 <div className="flex  flex-col justify-center items-center   h-fit w-fit gap-4 lg:gap-8   p-10 ">
                   <Link
-                    href="https://magiceden.io/collections/polygon/project_fada"
+                    href="https://raydium.io/swap/"
                     target="_blank"
                   >
                     <Button
