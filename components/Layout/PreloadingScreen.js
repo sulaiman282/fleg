@@ -68,7 +68,7 @@ export default function PreloadingScreen({ togglePlay1, handleToggleVideo1 }) {
                   setShow(true);
                   makeHide();
                 }}
-                className={`mt-5 font-bold lg:text-4xl md:text-3xl text-2xl text-primary text-center  ${
+                className={`mt-5 font-bold lg:text-4xl md:text-3xl text-2xl text-white text-center  ${
                   show ? "split-half3 " : ""
                 }`}
               >
