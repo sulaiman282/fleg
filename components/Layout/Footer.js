@@ -48,7 +48,7 @@ export default function Footer({ videoRef }) {
               <div className="   ">
                 <div className="flex  flex-col justify-center items-center   h-fit w-fit gap-4 lg:gap-8   p-10 ">
                   <Link
-                    href="https://raydium.io/swap/"
+                    href="https://raydium.io/swap/?inputCurrency=sol&outputCurrency=AmEriCAq4JpHxZNBNEaKJb1VRptQGv1CRHz5ytNqBpN&fixed=in"
                     target="_blank"
                   >
                     <Button
